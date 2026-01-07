@@ -13,6 +13,9 @@ fetch("/unclassroom/written-works/posts.json")
       const post = posts.find(p => p.title === title);
       if (!post) return;
 
+      console.log("HTML title:", title);
+      console.log("Available JSON titles:", posts.map(p => p.title));
+
       article.querySelector(".title").textContent = post.title;
 
       article.querySelector(".tag-container").innerHTML =
@@ -30,3 +33,4 @@ fetch("/unclassroom/written-works/posts.json")
     });
   })
   .catch(err => console.error("JSON load failed:", err));
+
