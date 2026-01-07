@@ -1,4 +1,4 @@
-fetch("/written-works/posts.json")
+fetch("rashmi-nair-here/unclassroom/written-works/posts.json")
 .then(res => res.json())
 .then(posts => {
     const articles = document.querySelectorAll(".post");
@@ -23,6 +23,7 @@ fetch("/written-works/posts.json")
     });
 
 })
+
 
 
 
