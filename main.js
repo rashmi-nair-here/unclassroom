@@ -1,4 +1,4 @@
-fetch("/unclassroom/written-works/posts.json")
+fetch("./rashmi-nair-here/unclassroom/written-works/posts.json")
   .then(res => {
     if (!res.ok) {
       throw new Error(`HTTP ${res.status}`);
@@ -12,9 +12,6 @@ fetch("/unclassroom/written-works/posts.json")
       const title = article.dataset.articleTitle;
       const post = posts.find(p => p.title === title);
       if (!post) return;
-
-      console.log("HTML title:", title);
-      console.log("Available JSON titles:", posts.map(p => p.title));
 
       article.querySelector(".title").textContent = post.title;
 
@@ -33,4 +30,5 @@ fetch("/unclassroom/written-works/posts.json")
     });
   })
   .catch(err => console.error("JSON load failed:", err));
+
 
