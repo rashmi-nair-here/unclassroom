@@ -1,4 +1,4 @@
-fetch("/written-works/posts.json")
+fetch("/unclassroom/written-works/posts.json")
 .then(res => res.json())
 .then(posts => {
     const articles = document.querySelectorAll(".post");
@@ -21,4 +21,5 @@ fetch("/written-works/posts.json")
             window.location.href = post.meta.url;
         }
     });
+
 })
