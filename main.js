@@ -1,4 +1,4 @@
-fetch("./rashmi-nair-here/unclassroom/written-works/posts.json")
+fetch("/rashmi-nair-here/unclassroom/written-works/posts.json")
   .then(res => {
     if (!res.ok) {
       throw new Error(`HTTP ${res.status}`);
@@ -30,5 +30,6 @@ fetch("./rashmi-nair-here/unclassroom/written-works/posts.json")
     });
   })
   .catch(err => console.error("JSON load failed:", err));
+
 
 
