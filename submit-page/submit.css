@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap'); /*mochiy pop p one*/
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap'); /*public sans*/
+
+:root {
+    --white: #fffff0;
+    --black: #141414;
+    --dark-blue: #172444;
+    --blue: #00165f;
+    --yellow: #ffcc33;
+    --red: #cf302b;
+    --header-font: 'Mochiy Pop P One', sans-serif;
+    --body-font: 'Public Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+}
+
+body::-webkit-scrollbar {
+    scrollbar-width: none;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: var(--blue);
+    align-items: center;
+    justify-content: center;
+}
+
+nav > ul > li {
+    display: flex;
+    gap: 1rem;
+}
+
+li > a {
+    color: var(--white);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: var(--body-font);
+}
+
+li > a:hover {
+    background-color: var(--red);
+    color: var(--yellow);
+    transition: 0.5s ease-in-out;
+}
+
+h1 {
+    font-family: var(--header-font);
+    color: var(--red);
+    text-align: center;
+    margin: 2rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-family: var(--header-font);
+    color: var(--red);
+    text-align: center;
+    margin: 2rem;
+    margin-bottom: 1rem;
+}
+
+h3, h4 {
+    font-family: var(--body-font);
+    color: var(--blue);
+    text-align: center;
+}
+
+#hover:hover {
+    background-color: var(--blue);
+    color: var(--yellow);
+    transition: 0.5s ease-in-out;
+    cursor: default;
+}
+
+p {
+    font-family: var(--body-font);
+    color: var(--black);
+    text-align: left;
+    margin: 0 2rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 5rem;
+}
+
+.container > .first-child {
+    margin-left: 1rem;
+}
+
+.content-container > div {
+    background-color: var(--blue);
+    border-radius: 0 0 15px 15px;
+    margin: 0 2.5rem;
+    padding: 1rem 1rem;
+    padding-bottom: 0.2rem;
+}
+
+.content-container > div:first-of-type {
+    border-radius: 15px 15px 0 0;
+}
+
+.content-container > div:last-of-type {
+    border-radius: 0 0 15px 15px !important;
+    margin-bottom: 2rem;
+}
+
+.content-container > div > p {
+    margin: 1rem;
+    color: var(--white);
+    font-family: var(--body-font);
+}
+
+.content-container > div > ul {
+    margin: 1rem;
+    padding-left: 1.5rem;
+    color: var(--white);
+    font-family: var(--body-font);
+}
+
+.content-container > div > ul > li {
+    margin-left: 2rem;
+}
+
+.content-container > .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+    border-radius: 0;
+    cursor: pointer;
+    transition: background-color 0.5s ease-out;
+}
+
+.wrap > h2 {
+    color: var(--yellow);
+    text-align: left;
+}
+
+.wrap > button > svg {
+    margin-top: 5rem;
+}
+
+div > p > a, div > p > a:visited, div > h3 > a, div > h3 > a:visited {
+    color: var(--blue);
+}
+
+#dropdown {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    display: inline-flex;
+    transition: transform 0.5s ease-out;
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    border-radius: 0 !important;
+}
+
+.content > p {
+    margin-bottom: 1rem;
+    margin-left: 2rem !important;
+}
+
+.content > h3 {
+    text-align: left;
+    margin-left: 2rem;
+    color: var(--yellow);
+}
+
+#sub-header {
+    padding-left: 1rem;
+}

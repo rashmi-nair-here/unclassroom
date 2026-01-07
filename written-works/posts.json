@@ -1,0 +1,153 @@
+[
+    {
+        "user": {
+            "userID": 1,
+            "name": [
+                {
+                    "firstName": "Rashmi"
+                },
+                {
+                    "lastName": "Nair"
+                }
+            ],
+            "avatar": "https://res.cloudinary.com/dmp57h6qg/image/upload/v1767808211/rashmi_nair_n1ueih.png"
+        },
+        "summary": "",
+        "title": "'I wish I were older'",
+        "meta": {
+            "tags": [
+                "Poetry",
+                "Things I Can't Google",
+                "Childhood"
+            ],
+            "url": "/written-works/poetry/things-i-cant-google/i-wish-i-were-older.html",
+            "date": "2025-03-03T00:00:00.000Z",
+            "author": {
+                "userID": 1,
+                "name": [
+                    {
+                        "firstName": "Rashmi"
+                    },
+                    {
+                        "lastName": "Nair"
+                    }
+                ],
+                "avatar": "https://res.cloudinary.com/dmp57h6qg/image/upload/v1767808211/rashmi_nair_n1ueih.png"
+            }
+        }
+    },
+    
+    {
+        "user": {
+            "userID": 2,
+            "name": [
+                {
+                    "firstName": "Isabella"
+                },
+                {
+                    "lastName": "Wen"
+                }
+            ],
+            "avatar": "https://res.cloudinary.com/dmp57h6qg/image/upload/v1767807950/isabella_wen_ez4tyj.png"
+        },
+        "summary": "",
+        "title": "When The Questions Stay",
+        "meta": {
+            "tags": [
+                "Poetry",
+                "Things I Can't Google",
+                "Identity"
+            ],
+            "url": "/written-works/poetry/things-i-cant-google/when-the-questions-stay.html",
+            "date": "2025-06-22T00:00:00.000Z",
+            "author": {
+                "userID": 2,
+                "name": [
+                    {
+                        "firstName": "Jane"
+                    },
+                    {
+                        "lastName": "Doe"
+                    }
+                ],
+                "avatar": "https://res.cloudinary.com/dmp57h6qg/image/upload/v1767807950/isabella_wen_ez4tyj.png"
+            }
+        }
+    },
+
+    {
+        "user": {
+            "userID": 3,
+            "name": [
+                {
+                    "firstName": "Yarit"
+                },
+                {
+                    "lastName": ""
+                }
+            ],
+            "avatar": "https://res.cloudinary.com/dmp57h6qg/image/upload/v1767808210/default_oocd8s.png"
+        },
+        "summary": "",
+        "title": "Be Yourself In 3 Easy Steps",
+        "meta": {
+            "tags": [
+                "Blog",
+                "Things I Can't Google",
+                "Identity"
+            ],
+            "url": "/written-works/blogs/things-i-cant-google/be-yourself-in-3-easy-steps.html",
+            "date": "2025-06-10T00:00:00.000Z",
+            "author": {
+                "userID": 3,
+                "name": [
+                    {
+                        "firstName": "Yarit"
+                    },
+                    {
+                        "lastName": ""
+                    }
+                ],
+                "avatar": "https://res.cloudinary.com/dmp57h6qg/image/upload/v1767808210/default_oocd8s.png"
+            }
+        }
+    },
+
+    {
+        "user": {
+            "userID": 4,
+            "name": [
+                {
+                    "firstName": "Keshavi"
+                },
+                {
+                    "lastName": ""
+                }
+            ],
+            "avatar": "https://res.cloudinary.com/dmp57h6qg/image/upload/v1767808210/default_oocd8s.png"
+        },
+        "summary": "",
+        "title": "Things You & I Can't Google",
+        "meta": {
+            "tags": [
+                "Blog",
+                "Things I Can't Google",
+                "Identity"
+            ],
+            "url": "/written-works/blogs/things-i-cant-google/things-you-and-i-cant-google.html",
+            "date": "2025-06-24T00:00:00.000Z",
+            "author": {
+                "userID": 3,
+                "name": [
+                    {
+                        "firstName": "Keshavi"
+                    },
+                    {
+                        "lastName": ""
+                    }
+                ],
+                "avatar": "https://res.cloudinary.com/dmp57h6qg/image/upload/v1767808210/default_oocd8s.png"
+            }
+        }
+    }
+]
