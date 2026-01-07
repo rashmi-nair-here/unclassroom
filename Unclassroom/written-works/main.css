@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap'); /*mochiy pop p one*/
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap'); /*public sans*/
+
+:root {
+    --white: #fffff0;
+    --black: #141414;
+    --dark-blue: #172444;
+    --blue: #00165f;
+    --yellow: #ffcc33;
+    --red: #cf302b;
+    --header-font: 'Mochiy Pop P One', sans-serif;
+    --body-font: 'Public Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+}
+
+body::-webkit-scrollbar {
+    scrollbar-width: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: var(--blue);
+    align-items: center;
+    justify-content: center;
+}
+
+nav > ul > li {
+    display: flex;
+    gap: 1rem;
+}
+
+li > a {
+    color: var(--white);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: var(--body-font);
+}
+
+li > a:hover {
+    background-color: var(--red);
+    color: var(--yellow);
+    transition: 0.5s ease-in-out;
+}
+
+h1 {
+    font-family: var(--header-font);
+    color: var(--red);
+    text-align: center;
+    margin-left: 2rem;
+    transition: color 0.5s ease-in-out;
+}
+
+input {
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--black);
+    width: 96%;
+    display: block;
+    margin: 0 auto;
+    font-family: var(--body-font);
+    color: var(--black);
+}
+
+input[type="search" i]::-webkit-search-cancel-button {
+    display: none !important;
+}
+
+input::placeholder {
+    font-family: var(--body-font);
+}
+
+.post-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    font-family: var(--body-font);
+    padding: 1.5rem;
+}
+
+.post-container > article {
+    background-color: #1414141d;
+    border-radius: 20px;
+    padding: 1.5rem;
+}
+
+.tag-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.tag-container > span {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 7px;
+    border-radius: 5px;
+    cursor: default;
+    font-weight: 600;
+}
+
+.date {
+    text-align: center;
+    font-style: italic;
+}
+
+article > h2 {
+    font-family: var(--body-font);
+    color: var(--red);
+    text-align: center;
+    text-decoration: none;
+}
+
+article > h2 > a {
+    color: var(--red);
+    text-decoration: none;
+}
+
+.author {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+img {
+    width: 50px;
+    border-radius: 50px;
+}
+
+article > p {
+    font-style: italic;
+    color: var(--dark-blue);
+}
+
+article > .btn {
+    width: 100%;
+    background-color: var(--blue);
+    padding: 14px 16px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: var(--white);
+    border: none;
+}
+
+div > .btn {
+    width: 50%;
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 14px 16px;
+    border-radius: 10px;
+    font-size: 16px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.btn > a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+div > .btn:hover {
+    background-color: var(--red);
+    color: var(--yellow);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+article > .btn:hover {
+    background-color: var(--red);
+    color: var(--yellow);
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 900px) {
+    .post-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    input {
+        width: 95%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+nav {
+    position: sticky;
+    top: 0;
+}

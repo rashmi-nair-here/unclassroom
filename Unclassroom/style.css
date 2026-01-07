@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap'); /*mochiy pop p one*/
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap'); /*public sans*/
+
+:root {
+    --white: #fffff0;
+    --black: #141414;
+    --dark-blue: #172444;
+    --blue: #00165f;
+    --yellow: #ffcc33;
+    --red: #cf302b;
+    --header-font: 'Mochiy Pop P One', sans-serif;
+    --body-font: 'Public Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+}
+
+body::-webkit-scrollbar {
+    scrollbar-width: none;
+}
+
+nav, .callout {
+    position: sticky;
+    top: 0;
+}
+
+.callout {
+    top: 46px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: var(--blue);
+    align-items: center;
+    justify-content: center;
+}
+
+nav > ul > li {
+    display: flex;
+    gap: 1rem;
+}
+
+li > a {
+    color: var(--white);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: var(--body-font);
+}
+
+li > a:hover {
+    background-color: var(--red);
+    color: var(--yellow);
+    transition: 0.5s ease-in-out;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container:last-child {
+    margin-right: 2rem;
+}
+
+h1 {
+    font-family: var(--header-font);
+    color: var(--black);
+    text-align: center;
+    margin-left: 2rem;
+    transition: color 0.5s ease-in-out;
+}
+
+div > div > h1:hover {
+    background-color: var(--blue);
+    color: var(--yellow) !important;
+    transition: 0.5s ease-in-out;
+    cursor: default;
+}
+
+#header-text {
+    color: var(--red);
+}
+
+h2 {
+    font-family: var(--body-font);
+    color: var(--blue);
+    text-align: center;
+}
+
+p {
+    font-family: var(--body-font);
+    color: var(--black);
+    text-align: left;
+    margin-left: 2rem;
+}
+
+#header {
+    color: var(--red);
+}
+
+.subheader-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+#subheader-text {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll 60s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.post-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    font-family: var(--body-font);
+    padding: 1.5rem;
+}
+
+.post-container > article {
+    background-color: #1414141d;
+    border-radius: 20px;
+    padding: 1.5rem;
+}
+
+.tag-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.tag-container > span {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 7px;
+    border-radius: 5px;
+    cursor: default;
+    font-weight: 600;
+}
+
+.date {
+    text-align: center;
+    font-style: italic;
+}
+
+article > h2 {
+    font-family: var(--body-font);
+    color: var(--red);
+    text-align: center;
+    text-decoration: none;
+}
+
+article > h2 > a {
+    color: var(--red);
+    text-decoration: none;
+}
+
+.author {
+    display: flex;
+    justify-content: flex-start;
+}
+
+img {
+    width: 50px;
+    border-radius: 50px;
+}
+
+article > p {
+    font-style: italic;
+    color: var(--dark-blue);
+}
+
+article > .btn {
+    width: 100%;
+    background-color: var(--blue);
+    padding: 14px 16px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: var(--white);
+    border: none;
+}
+
+div > .btn {
+    width: 100%;
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 14px 16px;
+    border-radius: 10px;
+    font-size: 16px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+}
+
+div > .btn:hover {
+    background-color: var(--red);
+    color: var(--yellow);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.post-desc {
+    margin: 1rem auto;
+}
+
+.post-desc > p {
+    margin-left: 0;
+}
+
+article > .btn:hover {
+    background-color: var(--red);
+    color: var(--yellow);
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 900px) {
+    .post-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    input {
+        width: 95%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.author-name {
+    margin-left: 10px;
+}
+
+.callout {
+    background-color: var(--black);
+    padding: 2px 0;
+    z-index: 2;
+}
+
+.callout > p {
+    color: var(--yellow);
+    text-align: center;
+}
+
+hr {
+    margin-top: 2rem;
+    width: 30%;
+    border: 2px solid var(--black);
+    border-radius: 2px;
+    opacity: 0.5;
+}
