@@ -1,6 +1,6 @@
 async function fetchPosts() {
     try {
-        const response = await fetch('/written-works/posts.json');
+        const response = await fetch('/unclassroom/written-works/posts.json');
         if (!response.ok) {
             throw new Error('Network response was not okay');
         }
@@ -29,5 +29,6 @@ async function fetchPosts() {
         console.error('Fetch error:', error);
     }
 }
+
 
 fetchPosts();
