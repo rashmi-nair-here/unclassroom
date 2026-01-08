@@ -1,6 +1,6 @@
 async function fetchPosts() {
     try {
-        const response = await fetch('/unclassroom/written-works/posts.json');
+        const response = await fetch('https://rashmi-nair-here.github.io/unclassroom/written-works/posts.json');
         if (!response.ok) {
             throw new Error('Network response was not okay');
         }
@@ -32,3 +32,4 @@ async function fetchPosts() {
 
 
 fetchPosts();
+
